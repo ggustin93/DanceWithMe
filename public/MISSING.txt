@@ -1,3 +1,5 @@
 The following files failed to download during site export. Please check them in the designer assets view (images) or dashboard (fonts).
 
 images/favicon.ico
+videos/bg-video-compressed-transcode-transcode.mp4
+videos/bg-video-compressed-transcode-transcode.webm
