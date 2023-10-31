@@ -183,8 +183,7 @@ p {
   background-color: #fff;
   padding-top: 18px;
   padding-bottom: 18px;
-  position: static;
-  top: 0;
+  position: relative;
 }
 
 .nav-link {
@@ -790,6 +789,10 @@ p {
 
 .rl_section_faq1 {
   background-color: var(--relume-library-lite-rl-white);
+}
+
+.heading-footer {
+  color: var(--relume-library-lite-rl-white);
 }
 
 .text-span {
@@ -1442,9 +1445,14 @@ p {
   }
 
   .menu-button {
+    color: var(--salmon);
     margin-top: 7px;
     padding: 10px;
     font-size: 32px;
+  }
+
+  .menu-button:hover, .menu-button:focus {
+    color: var(--salmon);
   }
 
   .menu-button.w--open {
@@ -1554,6 +1562,10 @@ p {
     margin-bottom: 20px;
     margin-right: 20px;
   }
+
+  .icon-5 {
+    color: var(--salmon);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1578,7 +1590,7 @@ p {
   }
 
   .logo-img {
-    width: 50px;
+    width: 60px;
   }
 
   .about-section {
@@ -1805,6 +1817,10 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px 20px;
+  }
+
+  .navbar {
+    position: relative;
   }
 
   .logo-title {
