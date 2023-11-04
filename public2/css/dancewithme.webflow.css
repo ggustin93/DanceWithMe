@@ -1404,6 +1404,10 @@ a {
   color: var(--white-smoke);
 }
 
+.white {
+  color: #fff;
+}
+
 @media screen and (max-width: 991px) {
   .header {
     padding-top: 140px;
@@ -1854,8 +1858,12 @@ a {
     line-height: 38px;
   }
 
-  .divider.grey.contact.mobile-divider, .divider.grey.contact.hide-mobile {
+  .divider.grey.contact.mobile-divider {
     display: none;
+  }
+
+  .divider.grey.contact.hide-mobile {
+    display: flex;
   }
 
   .main-subtitle {
@@ -1863,7 +1871,7 @@ a {
   }
 
   .main-subtitle.contact {
-    font-size: 18px;
+    font-size: 20px;
     display: inline;
   }
 
