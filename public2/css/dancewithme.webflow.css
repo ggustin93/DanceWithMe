@@ -115,12 +115,17 @@ p {
   line-height: 22px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 .button {
   background-color: var(--white-smoke);
   color: var(--grey-dark);
   text-align: center;
   border: 1px solid #47474f;
   border-bottom-width: 2px;
+  border-radius: 30px;
   padding: 15px 33px;
   font-family: Vollkorn, serif;
   font-size: 19px;
@@ -136,6 +141,10 @@ p {
   background-color: var(--sienna);
   color: var(--salmon);
   font-weight: 400;
+}
+
+.button.w--current {
+  border-radius: 20px;
 }
 
 .button.button-services {
@@ -480,9 +489,7 @@ p {
 }
 
 .icon-wrapper {
-  height: 95px;
-  margin-bottom: 10px;
-  padding-top: 13px;
+  padding-bottom: 10px;
 }
 
 .icon-wrapper._2 {
@@ -1389,6 +1396,14 @@ p {
   color: var(--salmon);
 }
 
+.html-embed {
+  margin-bottom: 20px;
+}
+
+.link-3 {
+  color: var(--white-smoke);
+}
+
 @media screen and (max-width: 991px) {
   .header {
     padding-top: 140px;
@@ -1606,11 +1621,16 @@ p {
   .section {
     margin-top: 40px;
     margin-bottom: 40px;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+
+  .section.grey.mobile-section {
+    margin-bottom: auto;
   }
 
   .section.contact.footer-home {
+    margin-top: auto;
     margin-bottom: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1632,10 +1652,6 @@ p {
 
   .testimonial-slide.left-border {
     border-left-width: 0;
-  }
-
-  .icon-wrapper {
-    height: 85px;
   }
 
   .icon-wrapper._2 {
@@ -1797,6 +1813,11 @@ p {
   .column-3 {
     padding-bottom: 40px;
   }
+
+  .column-7, .column-cta {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1902,19 +1923,14 @@ p {
     font-size: 20px;
   }
 
-  .icon-wrapper {
-    height: 50px;
-    margin-bottom: auto;
-    padding-top: 0;
-  }
-
   .icon-wrapper._2 {
     margin-top: auto;
     margin-bottom: auto;
   }
 
   .contact-text {
-    margin-bottom: auto;
+    color: var(--white-smoke);
+    font-size: 16px;
   }
 
   .link.link-footer {
@@ -2132,6 +2148,15 @@ p {
   .column-6 {
     padding-top: 0;
     padding-bottom: 30px;
+  }
+
+  .link-3 {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .link-3:hover {
+    text-decoration: underline;
   }
 }
 
